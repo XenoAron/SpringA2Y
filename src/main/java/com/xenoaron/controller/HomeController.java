@@ -31,4 +31,13 @@ public class HomeController {
     public String loadHomePage() {
         return "home";
     }
+
+    /*
+     * You can use other response type if you use jackson-databind library (see pom.xml)
+     * */
+    @ResponseBody
+    @RequestMapping(value = "/getBoolean")
+    public Boolean getBoolean() {
+        return true;
+    }
 }
