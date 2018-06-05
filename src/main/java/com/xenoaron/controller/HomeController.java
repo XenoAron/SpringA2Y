@@ -13,6 +13,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class HomeController {
+    /*
+    * '@ResponseBody' return *HTTP Response Body* not through *View*
+    * (like json, xml, string, etc.)
+    * */
     @ResponseBody
     @RequestMapping(value = "/hello", method = {RequestMethod.GET})
     public String hello() {
