@@ -22,4 +22,13 @@ public class HomeController {
     public String hello() {
         return "Hello";
     }
+
+    /*
+    * If you don't use '@ResponseBody', it will return 'View' named "home"
+    * (refer to 'root-context.xml')
+    * */
+    @RequestMapping(value = "/home")
+    public String loadHomePage() {
+        return "home";
+    }
 }
