@@ -34,6 +34,7 @@ public class HomeController {
 
     /*
      * You can use other response type if you use jackson-databind library (see pom.xml)
+     * Boolean -> String convert
      * */
     @ResponseBody
     @RequestMapping(value = "/getBoolean")
